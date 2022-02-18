@@ -1,0 +1,18 @@
+{
+  "name": "marsweatherapp",
+  "version": "1.0.0",
+  "description": "An app to check the weather on Mars so you can harvest your potatoes ;)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mars",
+    "Weather",
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "EGHCh",
+  "license": "ISC"
+}

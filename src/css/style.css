@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.mars {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  left: -12em;
+  bottom: -30em;
+  background: url("https://cdn.pixabay.com/photo/2020/02/04/17/02/map-4818850_960_720.jpg") repeat-x;
+  object-fit: cover;
+  box-shadow: inset 4px 20px 30px rgba(0, 0, 0, 0.86);
+  animation: rotation 80s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 600px;
+  }
+}
+.date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.date__unit {
+  font-size: 4em;
+  text-align: center;
+}
+.date__value {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.main__weather {
+  display: block;
+  max-width: 25em;
+}
+.main__weather h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.main__weather p {
+  font-size: 6em;
+}
+.main__weather p span {
+  font-size: 40px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: 2;
+}
+.main-grid .gi-w {
+  grid-row: 1/2;
+  place-self: center;
+}
+.main-grid .gi-m {
+  grid-row: 2/3;
+  align-self: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(180deg, #000000 39.31%, #6788FF 98%);
+  color: white;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

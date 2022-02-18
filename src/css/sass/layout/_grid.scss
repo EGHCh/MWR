@@ -1,0 +1,12 @@
+.main-grid {
+  display: grid;
+  grid-template-rows: 2;
+  .gi-w {
+    grid-row: 1 / 2;
+    place-self: center;
+  }
+  .gi-m {
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+}

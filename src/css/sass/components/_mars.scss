@@ -1,0 +1,22 @@
+.mars {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  left: -12em;
+  bottom: -30em;
+  background: url("https://cdn.pixabay.com/photo/2020/02/04/17/02/map-4818850_960_720.jpg") repeat-x;
+  object-fit: cover;
+  box-shadow: inset 4px 20px 30px rgba(0, 0, 0, 0.86);
+  animation: rotation 80s infinite linear;
+}
+
+@keyframes rotation{
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:600px;
+  }
+}

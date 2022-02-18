@@ -1,0 +1,16 @@
+.date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-family: 'Poppins';
+  font-weight: 600;
+  &__unit {
+    font-size: 4em;
+    text-align: center;
+  }
+  &__value {
+    font-size: 5em;
+    font-weight: bold;
+  }
+}
