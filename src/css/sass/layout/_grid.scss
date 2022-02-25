@@ -1,12 +1,19 @@
 .main-grid {
   display: grid;
-  grid-template-rows: 2;
-  .gi-w {
+  grid-template-rows: 3;
+  //Grid Item Title
+  .gi-t {
     grid-row: 1 / 2;
     place-self: center;
   }
-  .gi-m {
+  //Grid Item Carousel
+  .gi-c {
     grid-row: 2 / 3;
+    align-self: center;
+  }
+  //Grid Item Date
+  .gi-d {
+    grid-row: 3 / 4;
     align-self: center;
   }
 }
