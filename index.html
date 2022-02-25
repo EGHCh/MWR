@@ -7,30 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@300;700&family=Roboto:wght@400;700&display=swap"  rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
     <link rel="stylesheet" href="src/css/style.css" />
-    <title>Document</title>
+    <title>LMWR</title>
   </head>
   <body>
     <main class="main main-grid">
-      <div class="main__weather gi-w">
-        <h1>Latest Martian Weather</h1>
-        <!-- <p>35°<span>c</span></p> -->
+      <div class="main__weather gi-t">
+        <h1>Latest Martian Weather Report</h1>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide gi-c" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel__weather">
+              <h2>Temp.</h2>
+              <div class="weather">
+                <i class="fa-solid fa-temperature-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class=" carousel__wind">
+              <h2>Wind</h2>
+              <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class=" carousel__pressure">
+              <h2>Pressure</h2>
+              <div class="pressure">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <div class="mars"></div>
-      <div class="date gi-m">
+      <div class="date gi-d">
         <div class="date__sol">
           <p class="date__unit">Sol</p>
         </div>
         <div class="date__month">
           <p class="date__unit">Month</p>
-          <!-- <p class="date__value">Aug</p> -->
         </div>
         <div class="date__day">
           <p class="date__unit">Day</p>
-          <!-- <p class="date__value">24</p> -->
         </div>
       </div>
-      <script src="src/js/index.js"></script>
+      <!-- JavaScript Bundle with Popper -->
     </main>
+    <script src="src/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

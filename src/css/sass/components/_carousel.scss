@@ -1,0 +1,28 @@
+.carousel {
+  &-item  {
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      h2 {
+        font-size: 3em;
+        font-weight: 600;
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+      }
+      svg {
+        font-size: 4em;
+      }
+      p {
+        font-size: 3em;
+        font-weight: 600;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
