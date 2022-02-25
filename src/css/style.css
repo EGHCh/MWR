@@ -53,7 +53,7 @@ html {
 
 .main__weather {
   display: block;
-  max-width: 25em;
+  max-width: 27em;
 }
 .main__weather h1 {
   font-size: 40px;
