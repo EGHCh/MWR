@@ -18297,8 +18297,8 @@ html {
   display: flex;
   flex-direction: row;
 }
-.carousel-item div svg {
-  font-size: 4em;
+.carousel-item div img {
+  height: 4em;
 }
 .carousel-item div p {
   font-size: 3em;
